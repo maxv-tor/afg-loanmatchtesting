@@ -584,7 +584,7 @@
             try {
               nextBtn.disabled = true;
               loadingSpinner.classList.add('show'); // ADDED: Show spinner
-              const res = await fetch('https://afgcp.app.n8n.cloud/webhook/verify-email-start', { // TODO: Replace with your real verification start webhook URL
+              const res = await fetch('https://altfundsglobal.app.n8n.cloud/webhook/verify-email-start', { // TODO: Replace with your real verification start webhook URL
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
@@ -629,7 +629,7 @@
 
         try {
           verifyBtn.disabled = true;
-          const res = await fetch('https://afgcp.app.n8n.cloud/webhook/verify-email-check', { // TODO: Replace with your real verification check webhook URL
+          const res = await fetch('https://altfundsglobal.app.n8n.cloud/webhook/verify-email-check', { // TODO: Replace with your real verification check webhook URL
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
