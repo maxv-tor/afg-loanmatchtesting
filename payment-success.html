@@ -297,7 +297,7 @@
             }
             
             // Build webhook URL with parameters
-            const webhookUrl = new URL('https://afgcp.app.n8n.cloud/webhook/process-matching-workflow');
+            const webhookUrl = new URL('https://altfundsglobal.app.n8n.cloud/webhook/process-matching-workflow');
             webhookUrl.searchParams.append('submission_id', finalSubmissionId);
             if (email) webhookUrl.searchParams.append('email', email);
             if (fullName) webhookUrl.searchParams.append('full_name', fullName);
